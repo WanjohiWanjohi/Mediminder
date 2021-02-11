@@ -57,7 +57,7 @@ class _NewEntryState extends State<NewEntry> {
         ),
         centerTitle: true,
         title: Text(
-          "Add New Mediminder",
+          "Add New Medicine Reminder",
           style: TextStyle(
             color: Colors.black,
             fontSize: 18,
@@ -89,7 +89,7 @@ class _NewEntryState extends State<NewEntry> {
                 ),
               ),
               PanelTitle(
-                title: "Dosage in mg",
+                title: "Dosage in mg/ml",
                 isRequired: false,
               ),
               TextFormField(
@@ -357,7 +357,7 @@ class _NewEntryState extends State<NewEntry> {
       }
       await flutterLocalNotificationsPlugin.showDailyAtTime(
           int.parse(medicine.notificationIDs[i]),
-          'Mediminder: ${medicine.medicineName}',
+          'Medicine Reminder: ${medicine.medicineName}',
           medicine.medicineType.toString() != MedicineType.None.toString()
               ? 'It is time to take your ${medicine.medicineType.toLowerCase()}, according to schedule'
               : 'It is time to take your medicine, according to schedule',

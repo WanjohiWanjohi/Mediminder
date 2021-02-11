@@ -90,7 +90,7 @@ class TopContainer extends StatelessWidget {
               bottom: 10,
             ),
             child: Text(
-              "Mediminder",
+              "Handy Healthy",
               style: TextStyle(
                 fontFamily: "Angel",
                 fontSize: 64,
@@ -105,7 +105,7 @@ class TopContainer extends StatelessWidget {
             padding: EdgeInsets.only(top: 12.0),
             child: Center(
               child: Text(
-                "Number of Mediminders",
+                "Number of Medicine Reminders",
                 style: TextStyle(
                   fontSize: 17,
                   color: Colors.white,
@@ -117,7 +117,7 @@ class TopContainer extends StatelessWidget {
             stream: globalBloc.medicineList$,
             builder: (context, snapshot) {
               return Padding(
-                padding: EdgeInsets.only(top: 16.0, bottom: 5 ),
+                padding: EdgeInsets.only(top: 16.0, bottom: 5),
                 child: Center(
                   child: Text(
                     !snapshot.hasData ? '0' : snapshot.data.length.toString(),
@@ -152,7 +152,7 @@ class BottomContainer extends StatelessWidget {
             color: Color(0xFFF6F8FC),
             child: Center(
               child: Text(
-                "Press + to add a Mediminder",
+                "Press + to add a Medicine Reminder",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                     fontSize: 24,

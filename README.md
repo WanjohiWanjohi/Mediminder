@@ -1,4 +1,4 @@
-<h1 align="center">Mediminder</h1>
+<h1 align="center">Handy Healthy</h1>
 
 <div align="center">
   <strong>An Offline Medicine Reminder</strong>
